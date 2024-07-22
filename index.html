@@ -148,135 +148,45 @@
               </div>
 
               <div
-                class="p-3 d-flex position-absolute w-100 item-content invisible"
-                id="item-2-content"
-              >
-                <div
-                  class="left-content-container w-50 border border-3 border-top-0 border-start-0 border-bottom-0 border-danger"
-                >
-                  <div class="mb-3 row d-flex justify-content-between">
-                    <label
-                      for="staticEmail"
-                      class="col-sm-2 col-form-label fw-bold w-25"
-                      >Pays</label
-                    >
-                    <div class="col-sm-10 w-50 me-4">
-                      <select name="" id="" class="form-control">
-                        <option value="">pays 1</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="mb-3 row d-flex justify-content-between">
-                    <label
-                      for="staticEmail"
-                      class="col-sm-2 col-form-label fw-bold w-25"
-                      >Ville</label
-                    >
-                    <div class="col-sm-10 w-50 me-4">
-                      <input type="text" class="form-control" id="pays" />
-                    </div>
-                  </div>
+              class="p-3 position-absolute w-100 h-100 item-content invisible"
+              id="item-2-content"
+            >
+            <div class="h-100 d-flex flex-column justify-content-between overflow-auto">
 
-                  <div class="mb-3 row d-flex justify-content-between">
-                    <label
-                      for="staticEmail"
-                      class="col-sm-2 col-form-label fw-bold w-25"
-                      >Adresse</label
-                    >
-                    <div class="col-sm-10 w-50 me-4">
-                      <input type="text" class="form-control" id="pays" />
-                    </div>
-                  </div>
-
-                  <div class="mb-3 row d-flex justify-content-between">
-                    <label
-                      for="staticEmail"
-                      class="col-sm-2 col-form-label fw-bold w-25"
-                      >Adresse postale</label
-                    >
-                    <div class="col-sm-10 w-50 me-4">
-                      <input type="text" class="form-control" id="pays" />
-                    </div>
-                  </div>
-
-                  <div class="mb-3 row d-flex justify-content-between">
-                    <label
-                      for="staticEmail"
-                      class="col-sm-2 col-form-label fw-bold w-25"
-                      >Telephone fixe</label
-                    >
-                    <div class="col-sm-10 w-50 me-4">
-                      <input type="tel" class="form-control" id="tel-fix" />
-                    </div>
-                  </div>
-
-                  <div class="mb-3 row d-flex justify-content-between">
-                    <label
-                      for="staticEmail"
-                      class="col-sm-2 col-form-label fw-bold w-25"
-                      >Telephone mobile</label
-                    >
-                    <div class="col-sm-10 w-50 me-4">
-                      <input type="tel" class="form-control" id="tel-mob" />
-                    </div>
-                  </div>
-                </div>
-                <div class="right-content-container w-50 ps-2">
-                  <div class="mb-3 row d-flex justify-content-between">
-                    <label
-                      for="staticEmail"
-                      class="col-sm-2 col-form-label fw-bold w-25"
-                      >Email</label
-                    >
-                    <div class="col-sm-10 w-50 me-4">
-                      <input type="email" class="form-control" id="pays" />
-                    </div>
-                  </div>
-                  <div class="mb-3 row d-flex justify-content-between">
-                    <label
-                      for="staticEmail"
-                      class="col-sm-2 col-form-label fw-bold w-25"
-                      >Site web</label
-                    >
-                    <div class="col-sm-10 w-50 me-4">
-                      <input type="text" class="form-control" id="pays" />
-                    </div>
-                  </div>
-
-                  <div class="mb-3 row d-flex justify-content-between">
-                    <label
-                      for="staticEmail"
-                      class="col-sm-2 col-form-label fw-bold w-25"
-                      >Facebook</label
-                    >
-                    <div class="col-sm-10 w-50 me-4">
-                      <input type="text" class="form-control" id="pays" />
-                    </div>
-                  </div>
-
-                  <div class="mb-3 row d-flex justify-content-between">
-                    <label
-                      for="staticEmail"
-                      class="col-sm-2 col-form-label fw-bold w-25"
-                      >Twitter</label
-                    >
-                    <div class="col-sm-10 w-50 me-4">
-                      <input type="text" class="form-control" id="pays" />
-                    </div>
-                  </div>
-
-                  <div class="mb-3 row d-flex justify-content-between">
-                    <label
-                      for="staticEmail"
-                      class="col-sm-2 col-form-label fw-bold w-25"
-                      >Instagram</label
-                    >
-                    <div class="col-sm-10 w-50 me-4">
-                      <input type="text" class="form-control" id="tel-fix" />
-                    </div>
-                  </div>
-                </div>
+              <div>
+                <table class="table" id="tableForm">
+                  <thead>
+                    <tr>
+                      <th scope="col">Ordre</th>
+                      <th scope="col">Garantie</th>
+                      <th scope="col">Plafond</th>
+                      <th scope="col">Franchise</th>
+                      <th scope="col">Supprimer ?</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr data-tr-elem="1">
+                      <td><input type="text" class="w-25 p-2 border rounded-2" id="pays" /></td>
+                      <td>
+                        <select name="" id="" class="p-2 border rounded-2">
+                          <option value=""></option>
+                        </select> <!-- Balise fermante ajoutée ici -->
+                      </td>
+                      <td><input type="text" placeholder="Aucun" class="p-2 w-50 border rounded-2"></td>
+                      <td><input type="text" placeholder="Aucune" class="p-2 w-50 border rounded-2"></td>
+                      <td>
+                        <button type="button" class="btn btn-danger p-2 w-75" data-rmbtn-elem="1" onclick="removeObject(1)">Enlever</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+              <div class="d-flex justify-content-end">
+                <button type="button" class="btn border p-3 bg-light" id="addObject">Ajouter un objet garantie produit supplémentaire</button>
+              </div>
+            </div>
+
+            </div>
             </div>
             <div class="d-flex justify-content-between px-3 mt-2">
               <button class="btn btn-secondary">Retour</button>
